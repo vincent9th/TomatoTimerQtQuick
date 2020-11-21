@@ -44,6 +44,7 @@ Window {
                 this.stop();
                 countDownStartBtn.status_ = countDownStartBtn.timerTIMEOUT;
                 countDownStartBtn.text = "ok";
+                countShow.text = "accomplish"
 
                 timerWindow.flags = "Popup";
                 /*timerWindow.width = 320
@@ -83,6 +84,7 @@ Window {
                     status_ = timerSTOP;
                     text = "start";
                     timerWindow.flags = "Window";
+                    countShow.text = "0:0"
                     /*timerWindow.width = 640
                     timerWindow.height = 480
                     timerWindow.y = (Screen.desktopAvailableHeight - timerWindow.height)/2;
@@ -118,7 +120,7 @@ Window {
                 timerWindow.flags = "Window";
                 countDownStartBtn.status_ = countDownStartBtn.timerSTOP
                 countDownStartBtn.text = "start"
-                countShow.text = "0";
+                countShow.text = "0:0"
             }
         }
     }
