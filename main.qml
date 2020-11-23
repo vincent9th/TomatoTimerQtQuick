@@ -115,6 +115,9 @@ Window {
             id: countDownType
             text: "Work"
             onClicked: {
+                if(countDownStartBtn.timerSTOP != countDownStartBtn.status_)
+                    return;
+
                 type_ = !type_;
                 if(0 == type_){
                     statusShow.text = text = "Work"
